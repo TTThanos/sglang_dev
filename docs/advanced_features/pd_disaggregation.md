@@ -133,7 +133,7 @@ To enable NVLink transport for KV cache transfers with the mooncake backend (rec
 export SGLANG_MOONCAKE_CUSTOM_MEM_POOL=NVLINK
 export MC_FORCE_MNNVL=True
 ```
-To utilize Intra-Node NVLink for KV cache transfers using mooncake backend (recommended for A100/H20/H100, etc), you can set the following environment variables. Please be awared, auxiliary data also need to be transferred via TCP temporarily.
+To utilize Intra-Node NVLink for KV cache transfers with the Mooncake backend (recommended for A100, H20, H100, etc.), set the following environment variables. Please note that auxiliary data still needs to be transferred via TCP.
 
 ```bash
 export SGLANG_MOONCAKE_CUSTOM_MEM_POOL=INTRA_NODE_NVLINK
